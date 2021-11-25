@@ -15,9 +15,9 @@ export interface IEDirectives {
     compression?: number;
     sharpness?: number;
     rotate?: number;
-    inline?: true;
-    keep_meta?: true;
-    keepMeta?: true;
-    no_optimization?: true;
-    noOptimization?: true;
+    inline?: boolean;
+    keep_meta?: boolean;
+    keepMeta?: boolean;
+    no_optimization?: boolean;
+    noOptimization?: boolean;
 }
