@@ -6,16 +6,22 @@ import { IEDirectives } from "./types";
 export const OBJECT_TO_DIRECTIVES_MAP: { [key: string]: string } = {
     width: "w",
     height: "h",
+    autoWidthWithFallback: "w_auto",
     auto_width_fallback: "w_auto",
+    scaleToScreenWidth: "pc",
     scale_to_screen_width: "pc",
     crop: "cr",
+    outputFormat: "f",
     format: "f",
+    fitMethod: "m",
     fit: "m",
     compression: "cmpr",
     sharpness: "s",
     rotate: "r",
     inline: "in",
+    keepMeta: "meta",
     keep_meta: "meta",
+    noOptimization: "pass",
     no_optimization: "pass"
 };
 

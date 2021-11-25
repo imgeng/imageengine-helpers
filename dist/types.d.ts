@@ -4,14 +4,20 @@ export interface IEDirectives {
     width?: number;
     height?: number;
     auto_width_fallback?: number;
+    autoWidthWithFallback?: number;
     scale_to_screen_width?: number;
+    scaleToScreenWidth?: number;
     crop?: [number, number, number, number];
     format?: IEFormat;
+    outputFormat?: IEFormat;
     fit?: IEFit;
+    fitMethod?: IEFit;
     compression?: number;
     sharpness?: number;
     rotate?: number;
     inline?: true;
     keep_meta?: true;
+    keepMeta?: true;
     no_optimization?: true;
+    noOptimization?: true;
 }

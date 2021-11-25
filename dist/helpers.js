@@ -6,16 +6,22 @@ exports.maybe_create_directive = exports.build_IE_query_string = exports.build_I
 exports.OBJECT_TO_DIRECTIVES_MAP = {
     width: "w",
     height: "h",
+    autoWidthWithFallback: "w_auto",
     auto_width_fallback: "w_auto",
+    scaleToScreenWidth: "pc",
     scale_to_screen_width: "pc",
     crop: "cr",
+    outputFormat: "f",
     format: "f",
+    fitMethod: "m",
     fit: "m",
     compression: "cmpr",
     sharpness: "s",
     rotate: "r",
     inline: "in",
+    keepMeta: "meta",
     keep_meta: "meta",
+    noOptimization: "pass",
     no_optimization: "pass"
 };
 function build_IE_url(src, directives, debug) {

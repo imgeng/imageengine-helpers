@@ -62,3 +62,26 @@ describe("URL helpers", () => {
 	assert.strictEqual(`test?param=A`, build_IE_url("test?param=A", {}));
     });
 });
+
+
+const base_alternative = {
+    width: 200,
+    height: 500,
+    autoWidthWithFallback: 200,
+    scaleToScreenWidth: 50,
+    crop: [150, 300, 0, 0],
+    outputFormat: "jpg",
+    fitMethod: "box",
+    compression: 50,
+    sharpness: 20,
+    rotate: 0,
+    inline: true,
+    keepMeta: true,
+    noOptimization: true
+};
+
+describe("URL base alternative key naming", () => {
+    describe("ie directives query string", () => {
+	assert.strictEqual(`imgeng=${expected_directives_string}`, build_IE_query_string(build_IE_directives(base_alternative)));
+    });
+});
