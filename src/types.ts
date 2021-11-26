@@ -9,6 +9,7 @@ export type IEFormat =
     "png"  |
     "gif"  |
     "jpg"  |
+    "jpeg" |
     "bmp"  |
     "webp" |
     "jp2"  |
