@@ -22,7 +22,8 @@ exports.OBJECT_TO_DIRECTIVES_MAP = {
     keepMeta: "meta",
     keep_meta: "meta",
     noOptimization: "pass",
-    no_optimization: "pass"
+    no_optimization: "pass",
+    force_download: "dl"
 };
 function build_IE_url(src, directives, debug) {
     var directives_string = build_IE_directives(directives, debug);

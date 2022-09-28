@@ -23,7 +23,8 @@ export type IEFit =
     "stretch"   |
     "box"       |
     "letterbox" |
-    "cropbox"   ;
+    "cropbox"   |
+    "outside"   ;
 
 
 export interface IEDirectives {
@@ -54,4 +55,5 @@ export interface IEDirectives {
     keepMeta?: true;               // backward compatible key
     no_optimization?: true;        // don't apply IE optimizations
     noOptimization?: true;         // backward compatible key
+    force_download?: true;
 };
