@@ -22,7 +22,8 @@ export const OBJECT_TO_DIRECTIVES_MAP: { [key: string]: string } = {
     keepMeta: "meta",
     keep_meta: "meta",
     noOptimization: "pass",
-    no_optimization: "pass"
+    no_optimization: "pass",
+    force_download: "dl"
 };
 
 
