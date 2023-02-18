@@ -52,6 +52,7 @@ export interface IEDirectives {
     keep_meta?: true;              // keep EXIF image data
     no_optimization?: true;        // don't apply IE optimizations
     force_download?: true;
+    max_device_pixel_ratio: 2.1
 };
 ```
 
@@ -67,7 +68,8 @@ let directives: IEDirectives = {
     compression: 10,
     inline: true,
     format: "png",
-    force_download: true
+    force_download: true,
+    max_device_pixel_ratio: 2.1
 };
 
 let source_url: string = "https://my_ie_distribution.imgeng.io/path/to_asset1.jpg";

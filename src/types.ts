@@ -56,4 +56,6 @@ export interface IEDirectives {
     no_optimization?: true;        // don't apply IE optimizations
     noOptimization?: true;         // backward compatible key
     force_download?: true;
+    max_device_pixel_ratio?: number;
+    maxDevicePixelRatio?: number;
 };

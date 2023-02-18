@@ -23,7 +23,9 @@ exports.OBJECT_TO_DIRECTIVES_MAP = {
     keep_meta: "meta",
     noOptimization: "pass",
     no_optimization: "pass",
-    force_download: "dl"
+    force_download: "dl",
+    max_device_pixel_ratio: "maxdpr",
+    maxDevicePixelRatio: "maxdpr"
 };
 function build_IE_url(src, directives, debug) {
     var directives_string = build_IE_directives(directives, debug);

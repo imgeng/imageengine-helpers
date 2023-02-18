@@ -23,7 +23,9 @@ export const OBJECT_TO_DIRECTIVES_MAP: { [key: string]: string } = {
     keep_meta: "meta",
     noOptimization: "pass",
     no_optimization: "pass",
-    force_download: "dl"
+    force_download: "dl",
+    max_device_pixel_ratio: "maxdpr",
+    maxDevicePixelRatio: "maxdpr"
 };
 
 
