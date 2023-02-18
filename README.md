@@ -52,7 +52,7 @@ export interface IEDirectives {
     keep_meta?: true;              // keep EXIF image data
     no_optimization?: true;        // don't apply IE optimizations
     force_download?: true;
-    max_device_pixel_ratio: 2.1
+    max_device_pixel_ratio: 2.1;   // 1-4 float
 };
 ```
 
