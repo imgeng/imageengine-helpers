@@ -22,10 +22,11 @@ const base: IEDirectives = {
     inline: true,
     keep_meta: true,
     no_optimization: true,
-    force_download: true
+    force_download: true,
+    max_device_pixel_ratio: 2.1
 };
 
-const expected_directives_string = "/w_200/h_500/w_auto_200/pc_50/cr_150,300,0,0/f_jpg/m_box/cmpr_50/s_20/r_0/in_true/meta_true/pass_true/dl_true";
+const expected_directives_string = "/w_200/h_500/w_auto_200/pc_50/cr_150,300,0,0/f_jpg/m_box/cmpr_50/s_20/r_0/in_true/meta_true/pass_true/dl_true/maxdpr_2.1";
 
 describe("URL helpers", () => {
 
@@ -61,7 +62,7 @@ describe("URL helpers", () => {
             new_base.width = null;
             new_base.height = undefined;
 
-            let new_expected_directives = "/w_auto_200/pc_50/cr_150,300,0,0/f_jpg/m_box/cmpr_50/s_20/r_0/in_true/meta_true/pass_true/dl_true";
+            let new_expected_directives = "/w_auto_200/pc_50/cr_150,300,0,0/f_jpg/m_box/cmpr_50/s_20/r_0/in_true/meta_true/pass_true/dl_true/maxdpr_2.1";
 
             assert.strictEqual(`test?imgeng=${new_expected_directives}`, build_IE_url("test", new_base));
         });
@@ -91,7 +92,7 @@ const base_alternative: IEDirectives = {
     keepMeta: true,
     noOptimization: true,
     force_download: true,
-
+    max_device_pixel_ratio: 2.1
 };
 
 describe("URL base alternative key naming", () => {

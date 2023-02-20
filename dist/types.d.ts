@@ -21,4 +21,6 @@ export interface IEDirectives {
     no_optimization?: true;
     noOptimization?: true;
     force_download?: true;
+    max_device_pixel_ratio?: number;
+    maxDevicePixelRatio?: number;
 }
