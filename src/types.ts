@@ -16,7 +16,8 @@ export type IEFormat =
     "svg"  |
     "mp4"  |
     "jxr"  |
-    "avif" ;
+    "avif" |
+    "jxl"  ;
 
 
 export type IEFit =
