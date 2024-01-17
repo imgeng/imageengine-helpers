@@ -1,5 +1,5 @@
-export declare type IEFormat = "png" | "gif" | "jpg" | "jpeg" | "bmp" | "webp" | "jp2" | "svg" | "mp4" | "jxr" | "avif" | "jxl";
-export declare type IEFit = "stretch" | "box" | "letterbox" | "cropbox" | "outside";
+export type IEFormat = "png" | "gif" | "jpg" | "jpeg" | "bmp" | "webp" | "jp2" | "svg" | "mp4" | "jxr" | "avif" | "jxl";
+export type IEFit = "stretch" | "box" | "letterbox" | "cropbox" | "outside";
 export interface IEDirectives {
     width?: number;
     height?: number;

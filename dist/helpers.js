@@ -33,7 +33,7 @@ function build_IE_url(src, directives, debug) {
     var query_prefix = query_string === "" ?
         "" :
         (src.includes("?") ? "&" : "?");
-    return "" + src + query_prefix + query_string;
+    return "".concat(src).concat(query_prefix).concat(query_string);
 }
 exports.build_IE_url = build_IE_url;
 ;
@@ -47,7 +47,7 @@ exports.build_IE_directives = build_IE_directives;
 ;
 function build_IE_query_string(directives_string, debug) {
     if (directives_string && directives_string !== "") {
-        return "imgeng=" + directives_string;
+        return "imgeng=".concat(directives_string);
     }
     else {
         debug && console.warn("build_IE_query_string called with an empty directives_string.");
@@ -59,14 +59,14 @@ exports.build_IE_query_string = build_IE_query_string;
 function maybe_create_directive(directive, value, debug) {
     var translated_directive = exports.OBJECT_TO_DIRECTIVES_MAP[directive];
     if (translated_directive && (value || value === 0)) {
-        return "/" + translated_directive + "_" + value;
+        return "/".concat(translated_directive, "_").concat(value);
     }
     else if (translated_directive) {
-        debug && console.warn("Directive '" + directive + "' has an invalid value " + value + ".");
+        debug && console.warn("Directive '".concat(directive, "' has an invalid value ").concat(value, "."));
         return "";
     }
     else {
-        debug && console.warn("Directive '" + directive + "' isn't recognized and won't be applied to the image.");
+        debug && console.warn("Directive '".concat(directive, "' isn't recognized and won't be applied to the image."));
         return "";
     }
 }
