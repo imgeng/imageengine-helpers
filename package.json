@@ -1,6 +1,6 @@
 {
   "name": "@imageengine/imageengine-helpers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A set of helper functions to generate ImageEngine custom urls with valid directives",
   "homepage": "https://github.com/imgeng/imageengine-helpers",
   "repository": {
@@ -11,7 +11,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-"files": [
+  "files": [
     "dist"
   ],
   "scripts": {
